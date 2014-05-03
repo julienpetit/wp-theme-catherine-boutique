@@ -1,0 +1,254 @@
+.brand-main {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.margin-20 {
+  height:20px;
+  width: 100%;
+}
+.wpcf7-form .control-group p {
+  line-height: 1px;
+  margin: 0;
+}
+
+.hr-vintage {
+  height: 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-top: 1px solid transparent;
+  background-image: url(../img/border-50.png);
+  margin: 10px 0;
+}
+
+a { 
+  color: darken(@color-indigo, 30%);
+}
+
+a:hover {
+  text-decoration: none;
+  color: darken(@color-indigo, 40%);
+}
+
+.affix {
+  top: 0;
+}
+
+strong {
+  color: darken(@color-indigo, 30%);
+}
+
+.topwaves {
+  background-image: url("../img/topwaves.png");
+  background-repeat: repeat-x;
+  /* float: left; */
+  height: 15px;
+  left: 0;
+  margin-top: 11px;
+  position: absolute;
+  width: 100%;
+  z-index: 25;
+}
+
+.bottomwaves {
+  background-image: url("../img/bottomwaves.png");
+  background-repeat: repeat-x;
+  height: 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 25;
+  margin: -9px 0 0;
+}
+
+header#header {
+  background: url(../img/grey-bg.png) #fff;
+  padding: 12px 0;
+  margin: 0;
+
+  h1 {
+    // font-family: @font-family-script;
+    font-size: 3em;
+    a { 
+      color: darken(@color-indigo, 30%);
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: darken(@color-indigo, 40%);
+    }
+  }
+
+  .navbar-vintage {
+    margin-top: 25px;
+
+
+    ul#menu-general {
+      padding-top: 7px;
+      border-top: dashed 1px darken(@color-indigo, 30%);
+      border-bottom: dashed 1px darken(@color-indigo, 30%);
+      text-align: center;
+      width: 100%;
+
+      li {
+        float: none;
+        display: inline-block;
+      }
+    }
+
+    ul#menu-general > li > a {
+      font-size: 1.2em;
+      float: left;
+      display: block;
+    }
+    
+    ul#menu-general > li:after {
+      content: "♥";
+      color: darken(@color-indigo, 15%);
+      font: normal 20px/20px Arial;
+      display: block;
+      float: left;
+      width: auto;
+      margin-top: 13px;
+    }
+
+    ul#menu-general > li:last-child:after {
+      content: "";
+    }
+  }
+
+}
+
+
+.homedivider {
+  height: 20px;
+  background-image: url("../img/homedivider.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main {
+
+
+  .page-header {
+    text-decoration: none;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 0;
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+    }
+  }
+}
+
+.post {
+  p {
+
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  nav.post-navigation {
+
+
+    .next-entries, .prev-entries {
+      position: fixed;
+      top: 50%;
+      z-index: 999;
+      display: block;
+      border: dashed 1px @color-indigo;
+      a {
+        padding: 5px;
+
+        text-align: center;
+      }
+    }
+
+
+    .prev-entries {
+      left: 30px;
+    }
+
+    .next-entries {
+      right: 30px;
+    }
+  }
+}
+
+@media (min-width: @screen-xs-min) and (max-width: @screen-lg-min) { 
+  nav.post-navigation {
+    position: fixed;
+    background-color: #DDD;
+    width: 100%;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .prev-entries {
+    float: left;
+  }
+
+  .next-entries {
+    float: right;
+  }
+}
+
+
+
+
+aside {
+
+
+  @media (max-width: @screen-xs-max) { 
+    .affix {
+      position: relative;
+    } 
+  }
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+    .affix {
+      width: 188px;
+    }
+  }
+
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .affix {
+      width: 243px;
+    }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .affix {
+      width: 263px;
+    }
+  }
+
+
+
+  .well-vintage ul {
+    padding: 0;
+    margin: 0;
+
+    li.active {
+      background-color: #EEE;
+    }
+  }
+}
+
+
+article.post {
+  margin-bottom: 20px;
+  p {
+    font-size: 1.4em;
+  }
+}

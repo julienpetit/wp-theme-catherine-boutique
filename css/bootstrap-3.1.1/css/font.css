@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'JosefinSlab-Thin';
+  src: url(../fonts/JosefinSlab/JosefinSlab-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'JosefinSlab-SemiBold';
+  src: url(../fonts/JosefinSlab/JosefinSlab-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'JosefinSlab-Light';
+  src: url(../fonts/JosefinSlab/JosefinSlab-Light.ttf);
+}

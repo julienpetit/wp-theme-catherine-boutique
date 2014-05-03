@@ -1,0 +1,14 @@
+/*
+Theme Name: wp-theme-catherineboutique
+Theme URI: www.julienpetit.fr/themes/wp-theme-catherineboutique
+Author: Julien Petit
+Author URI: www.julienpetit.fr
+Description: A versatile and responsive Bootstrap WordPress starter theme FOR DEVELOPERS based on Twitter Bootstrap 3.1.1.
+Version: 1.30
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, fluid-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
+Text Domain: wp-theme-catherineboutique
+*/
+
+@import "css/bootstrap.css";

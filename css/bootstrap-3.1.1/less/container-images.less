@@ -1,0 +1,343 @@
+
+.container-images {
+  position: relative;
+
+  .caption {
+    display: none;
+  }
+
+  img:hover {
+    background: rgba(0, 0, 0, 0.85); 
+    // -webkit-filter: grayscale(77%);
+    position: relative;
+    z-index: 122;
+    // -webkit-transform : scale(1.01);
+  }
+
+
+
+  .image-landscape, .image-portrait {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+
+  .image-landscape .caption, .image-portrait .caption{
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    width: 100%;
+    margin-top: -50px;
+    bottom: 0;
+    font-weight: bold;
+    color: white;
+    z-index: 111;
+  }
+}
+
+.pattern-bg-4 {
+  background: url(/img/pattern-img-4.png) no-repeat 50% 0;
+}
+
+.pattern-bg-5 {
+  background: url(/img/pattern-img-4.png) no-repeat 50% 0;
+}
+
+.pattern-bg-6 {
+  background: url(/img/pattern-img-4.png) repeat-y 50% 0;
+}
+
+
+
+.rotate(@deg: 90) {
+    /* Safari */
+    -webkit-transform: rotate(@deg * 1deg);
+    /* Firefox */
+    -moz-transform: rotate(@deg * 1deg);
+    /* IE10+ */
+    transform: rotate(@deg * 1deg);
+    /* Opera */
+    -o-transform: rotate(@deg * 1deg);
+    /* Internet Explorer */
+    @IEdeg: round(@deg / 90, 0);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@IEdeg);
+}
+
+
+.container-images {
+
+  padding-bottom: 20px;
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: (33% - 1px);
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: (33% - 1px);
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+.container-images-1 {
+
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+
+@max-width-image:            ((100%/2) - 20px);
+.container-images-4 {
+
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: (45% - 1px);
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+.container-images-5 {
+
+  .cell-4-images {
+    width: (50% - 1px);
+    display: inline-block;
+    vertical-align: middle;
+
+    .image-landscape {
+      width: (50% - 1px);
+    }
+
+    .image-portrait {
+      width: (40% - 1px);
+    }
+  }
+
+  .cell-1-image {
+    width: (50% - 1px);
+    display: inline-block;
+    vertical-align: middle;
+
+    .image-landscape {
+      width: 100%;
+    }
+
+    .image-portrait {
+      width: 60%;
+    }
+
+  }
+
+  .image-landscape, .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+
+.container-images-6, .container-images-3 {
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .image-landscape, .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: (50% - 1px);
+  }
+
+  .image-landscape {
+  }
+
+  .image-portrait {
+    // margin-right: 7%;
+    .img-thumbnail {
+
+      width: auto;
+      max-height: 50%;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    max-width: (33% - 1px);
+    max-height: 60%;
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+.container-images-7 {
+
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+
+
+
+.container-images-9 {
+
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+
+.container-images-10 {
+
+  .image-landscape {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+  }
+
+  .image-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    width: @max-width-image;
+
+  }
+
+  .image-portrait:nth-child(2n + 3) {
+    .rotate(2deg)
+  }
+
+  .image-portrait:nth-child(2n + 2) {
+    .rotate(-1deg)
+  }
+}
+
+
+/* looping mixin */
+// .loop (@index) when (@index > 0) {
+
+//   @max-width-image:            100%/@index;
+//   .container-images-@{index} {
+
+//     .image-landscape {
+//       display: inline-block;
+//       vertical-align: middle;
+//       width: @max-width-image - 1px;
+//     }
+
+//     .image-portrait {
+//       display: inline-block;
+//       vertical-align: middle;
+//       width: @max-width-image - 1px;
+
+//     }
+
+//     .image-portrait:nth-child(2n + 3) {
+//       .rotate(2deg)
+//     }
+
+//     .image-portrait:nth-child(2n + 2) {
+//       .rotate(-1deg)
+//     }
+//   }
+
+//   loop: member @index; /* do whatever you need to do */
+//   .loop((@index - 1)); /* loop again */
+// }
+// /* stop mixin */
+// .loop (@index) when (@index <= 0) {
+//   loop: end;
+// }
+
+// /* use looping mixin */
+// .row {
+//   .loop(8);
+// }
