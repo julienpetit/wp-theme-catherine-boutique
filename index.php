@@ -14,7 +14,7 @@
 
 
 
-    <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> main">
+    <div class="col-md-10 col-md-offset-1<?php //devdmbootstrap3_main_content_width(); ?> main">
 
                 
             <?php // theloop
