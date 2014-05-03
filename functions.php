@@ -38,9 +38,30 @@ add_editor_style('css/editor-style.css');
     {
         global $version;
         wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/bootstrap.min.js',array( 'jquery' ),$version,true );
-        wp_enqueue_script('respond-js', get_template_directory_uri() . '/js/respond.min.js',array( 'jquery' ),$version,true );
-        wp_enqueue_script('html5shiv-js', get_template_directory_uri() . '/js/html5shiv.min.js',array( 'jquery' ),$version,true );
+        
+        preg_match('/MSIE (.*?);/', $_SERVER['HTTP_USER_AGENT'], $matches);
+
+        if (count($matches)>1){
+          //Then we're using IE
+          $version = $matches[1];
+
+          switch(true){
+            case ($version<=8):
+              //IE 8 or under!
+              break;
+
+            case ($version<=9):
+                wp_enqueue_script('respond-js', get_template_directory_uri() . '/js/respond.min.js',array( 'jquery' ),$version,true );
+                wp_enqueue_script('html5shiv-js', get_template_directory_uri() . '/js/html5shiv.min.js',array( 'jquery' ),$version,true );
+    
+              break;
+
+            default:
+              //You get the idea
+          }
+        }
     }
+
     add_action('wp_enqueue_scripts', 'devdmbootstrap3_theme_js');
 
 ////////////////////////////////////////////////////////////////////
