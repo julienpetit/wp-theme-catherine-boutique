@@ -170,5 +170,20 @@ function remove_width_and_height_attribute( $html ) {
    return preg_replace( '/(height|width)="\d*"\s/', "", $html );
 }
 
+// Optimisation de Contact Form 7
+  add_action( 'wp_print_scripts' , 'cf7_js' , 100 );
+function cf7_js() {
+if ( !is_page('contact')) {
+wp_deregister_script( 'contact-form-7' );
+}
+}
+add_action ( 'wp_print_styles' , 'cf7_styles' , 100 );
+function cf7_styles() {
+wp_deregister_style( 'contact-form-7');
+wp_register_style( 'contact7' , get_template_directory_uri() . '/css/contact.css' );
+wp_enqueue_style( 'contact7', get_template_directory_uri() . '/css/contact.css' );   
+}
+
+
 
 ?>
