@@ -6262,6 +6262,10 @@ body > footer {
   display: inline-block;
   vertical-align: middle;
 }
+p {
+  font-size: 1.1em;
+  text-align: justify;
+}
 .margin-20 {
   height: 20px;
   width: 100%;
