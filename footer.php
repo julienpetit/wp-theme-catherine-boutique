@@ -12,6 +12,19 @@
       </div>
   </footer>
 
+
+
+
+
+
+
 <?php wp_footer(); ?>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  var $ = jQuery;
+    $('.a-tooltip').tooltip();
+    $('.brand-main').tooltip();
+})
+</script>
 </body>
 </html>

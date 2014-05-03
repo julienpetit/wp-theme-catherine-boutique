@@ -28,11 +28,3 @@
             </nav>
     </div>
 <?php endif; ?>
-
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.a-tooltip').tooltip();
-})
-
-</script>
