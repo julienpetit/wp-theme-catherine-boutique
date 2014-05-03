@@ -6270,6 +6270,9 @@ body > footer {
   line-height: 1px;
   margin: 0;
 }
+.metaslider > div {
+  height: 250px !important;
+}
 .hr-vintage {
   height: 0;
   display: block;
