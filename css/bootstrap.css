@@ -6433,6 +6433,17 @@ section#brands .brand-main {
   display: inline-block;
   vertical-align: middle;
 }
+.nivoSlider .nivo-caption {
+  font-family: "JosefinSlab-Light", Helvetica, Arial, sans-serif !important;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  .nivoSlider .nivo-caption {
+    font-size: 1.4em;
+  }
+}
 .color-indigo {
   color: #56b4ac;
 }
