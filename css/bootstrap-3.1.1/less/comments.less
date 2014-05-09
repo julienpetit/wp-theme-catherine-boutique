@@ -1,0 +1,86 @@
+
+
+.page-comments {
+
+
+  .comments li {
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b3ddda;
+  }
+
+  ul.commentlist {
+
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      padding: 15px;
+      background-color: #f2f2f2;
+
+      ul.children {
+        border-top: solid 1px @color-indigo;
+      }
+
+      
+
+      .comment-body {
+        position: relative;
+
+        p {
+          margin-top: 10px;
+        }
+
+        .reply {
+          position: absolute;
+          top: 0; right: 0;
+           a {
+            color: darken(@color-purple, 40%);
+          }
+        }
+
+        .comment-meta {
+          position: absolute;
+          top: 30px;
+          right: 0;
+          a {
+            color: darken(@color-purple, 40%);
+          }
+          
+        }
+      }
+    }
+
+    li.bypostauthor {
+      background-color: @color-indigo;
+    }
+
+    div.comment-author {
+      .fn {
+        font-size: 20px;
+        color: darken(@color-purple, 40%);
+      }
+      span.says {
+        display: none;
+      }
+    }
+  }
+
+  h4#comments {
+    text-align: center;
+  }
+  img.avatar {
+    width: 40px;
+  }
+}
+
+
+
+.comment-respond {
+  .form-allowed-tags {
+    code {
+      font-size: 12px;
+      white-space: normal;
+    }
+  }
+}

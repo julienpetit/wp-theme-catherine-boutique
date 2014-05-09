@@ -6448,7 +6448,91 @@ section#brands .brand-main {
   color: #56b4ac;
 }
 .gallery-item img {
-  border: solid 1px #cfcfcf !important;
+  border: none !important;
   width: 98%;
   height: auto;
+}
+.gallery-custom-1 {
+  display: block;
+}
+.gallery-custom-1 .item-gallery {
+  height: 203px;
+  width: 198px;
+  display: inline-block;
+}
+.gallery-custom-1 .item-gallery .item-gallery-custom {
+  width: 198px;
+  height: 203px;
+  display: block;
+  position: absolute;
+}
+.gallery-custom-1 .item-gallery .item-gallery-custom .centered {
+  width: 198px;
+  height: 203px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-custom-1 .item-gallery .item-gallery-custom .centered img {
+  left: 0;
+  top: -25%;
+  position: absolute;
+}
+.page-comments .comments li {
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #b3ddda;
+}
+.page-comments ul.commentlist {
+  margin: 0;
+  padding: 0;
+}
+.page-comments ul.commentlist li {
+  list-style: none;
+  padding: 15px;
+  background-color: #f2f2f2;
+}
+.page-comments ul.commentlist li ul.children {
+  border-top: solid 1px #c0e3e0;
+}
+.page-comments ul.commentlist li .comment-body {
+  position: relative;
+}
+.page-comments ul.commentlist li .comment-body p {
+  margin-top: 10px;
+}
+.page-comments ul.commentlist li .comment-body .reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page-comments ul.commentlist li .comment-body .reply a {
+  color: #5a4d5e;
+}
+.page-comments ul.commentlist li .comment-body .comment-meta {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.page-comments ul.commentlist li .comment-body .comment-meta a {
+  color: #5a4d5e;
+}
+.page-comments ul.commentlist li.bypostauthor {
+  background-color: #c0e3e0;
+}
+.page-comments ul.commentlist div.comment-author .fn {
+  font-size: 20px;
+  color: #5a4d5e;
+}
+.page-comments ul.commentlist div.comment-author span.says {
+  display: none;
+}
+.page-comments h4#comments {
+  text-align: center;
+}
+.page-comments img.avatar {
+  width: 40px;
+}
+.comment-respond .form-allowed-tags code {
+  font-size: 12px;
+  white-space: normal;
 }

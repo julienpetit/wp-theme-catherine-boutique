@@ -9,9 +9,41 @@
   }
 
   img {
-    border: solid 1px #cfcfcf !important;
+    border: none !important;
     width: 98%;
     height: auto;
+  }
+
+}
+
+
+.gallery-custom-1 {
+
+  display: block;
+  .item-gallery {
+    height: 203px;
+    width: 198px;
+    display: inline-block;
+
+  .item-gallery-custom {
+
+    width: 198px;
+    height: 203px;
+    display: block;
+    position: absolute;
+
+    .centered {
+      width: 198px;
+      height: 203px;
+      overflow: hidden;
+      position: relative;
+      img {
+        left: 0;
+        top: -25%;
+        position: absolute;
+      }
+    }
+      }
   }
 
 }
