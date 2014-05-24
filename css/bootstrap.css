@@ -6470,6 +6470,27 @@ header#header .navbar-vintage ul#menu-general > li:last-child:after {
     float: right;
   }
 }
+@media (max-width: 767px) {
+  nav.post-navigation {
+    height: 30px;
+  }
+  .next-entries,
+  .prev-entries {
+    padding-top: 3px;
+  }
+  .next-entries a,
+  .prev-entries a {
+    text-align: center;
+  }
+  .next-entries a span.glyphicon,
+  .prev-entries a span.glyphicon {
+    font-size: 16px;
+  }
+  .next-entries a span.text,
+  .prev-entries a span.text {
+    font-size: 12px;
+  }
+}
 article.post {
   margin-bottom: 20px;
 }
