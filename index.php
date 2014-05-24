@@ -65,8 +65,12 @@
                 
                 <div class="homedivider"></div>
                 <nav class="post-navigation">
-                  <span class="prev-entries"><?php previous_posts_link('&laquo; Page précédente') ?></span>
-                  <span class="next-entries"><?php next_posts_link('Page suivante &raquo;','') ?></span>
+                  <div class="prev-entries">
+                    <?php previous_posts_link('<span class="glyphicon glyphicon-chevron-left"></span><br /><span class="text">page précédente</span>') ?>
+                  </div>
+                  <div class="next-entries">    
+                    <?php next_posts_link('<span class="glyphicon glyphicon-chevron-right"></span><br /><span class="text">page suivante</span>','') ?>
+                  </div>
                 </nav>
                 <?php else: ?>
 

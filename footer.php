@@ -24,6 +24,7 @@ jQuery(document).ready(function() {
   var $ = jQuery;
     $('.a-tooltip').tooltip();
     $('.brand-main').tooltip();
+    $('.next-entries').tooltip();
 })
 </script>
 </body>

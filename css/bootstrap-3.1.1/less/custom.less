@@ -8,6 +8,13 @@ p {
   height:20px;
   width: 100%;
 }
+
+.margin-10 {
+  height:10px;
+  width: 100%;
+}
+
+
 .wpcf7-form .control-group p {
   line-height: 1px;
   margin: 0;
@@ -174,42 +181,93 @@ header#header {
       top: 50%;
       z-index: 999;
       display: block;
-      border: dashed 1px @color-indigo;
-      a {
-        padding: 5px;
+      //border: dashed 1px @color-indigo;
+      text-align: center; 
+      margin: 0;
+      padding: 0;
 
+
+      a {
         text-align: center;
+        span.glyphicon {
+          font-size: 25px;
+        }
+
+        span.text {
+          font-size: 18px;
+        }
       }
     }
 
 
     .prev-entries {
-      left: 30px;
+      left: 60px;
+
+      
     }
 
     .next-entries {
-      right: 30px;
+      right: 60px;
     } 
   }
 }
 
-@media (min-width: @screen-xs-min) and (max-width: @screen-lg-min) { 
+@media (max-width: @screen-lg-min) { 
   nav.post-navigation {
     position: fixed;
     background-color: #DDD;
     width: 100%;
-    height: 25px;
-    top: 0;
+    height: 50px;
+    bottom: 0;
     left: 0;
     right: 0;
   }
 
+  .next-entries, .prev-entries {
+    padding-top: 10px;
+    width: 40%;
+      a {
+        text-align: center;
+        span.glyphicon {
+          font-size: 25px;
+        }
+
+        span.text {
+          font-size: 18px;
+        }
+      }
+
+      br {
+        display: none;
+      }
+    }
+
   .prev-entries {
+    margin-left: 20px;
     float: left;
+    a {
+        span.glyphicon {
+          float: left;
+        }
+
+        span.text {
+          float: left;
+        }
+      }
   }
 
   .next-entries {
+    margin-right: 20px;
     float: right;
+    a {
+        span.glyphicon {
+          float: right;
+        }
+
+        span.text {
+          float: right;
+        }
+      }
   }
 }
 
