@@ -6470,13 +6470,13 @@ header#header .navbar-vintage ul#menu-general > li:last-child:after {
     float: right;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   nav.post-navigation {
     height: 30px;
   }
   .next-entries,
   .prev-entries {
-    padding-top: 4px;
+    padding-top: 5px;
   }
   .next-entries a,
   .prev-entries a {
