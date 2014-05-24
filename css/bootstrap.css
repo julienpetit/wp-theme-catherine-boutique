@@ -6446,7 +6446,8 @@ header#header .navbar-vintage ul#menu-general > li:last-child:after {
   }
   .next-entries br,
   .prev-entries br {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
   }
   .prev-entries {
     margin-left: 20px;
